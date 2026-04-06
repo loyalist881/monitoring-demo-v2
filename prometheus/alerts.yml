@@ -1,0 +1,9 @@
+groups:
+  - name: bulk-load-alerts
+    rules:
+      - alert: HighMemoryUsage
+        expr: jvm_memory_used_bytes{area="heap"} > 524288000
+        for: 5s
+        annotations:
+          summary: "Критическое потребление памяти: {{ $labels.instance }}"
+          description: "Использование Heap превысило 500 МБ из-за Bulk Loading."

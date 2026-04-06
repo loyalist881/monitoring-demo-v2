@@ -1,0 +1,36 @@
+### Java / Maven ###
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+### Virtual Machine / Logs ###
+*.log
+.crash
+.stackdump
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### VS Code ###
+.vscode/
+.history/
+*.code-workspace
+
+### Docker ###
+docker-data/
+*.db
+
+### MacOS / Windows ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Environment / Secrets ###
+.env
+.env.local
